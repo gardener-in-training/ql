@@ -21,6 +21,7 @@ class Processor(object):
         # sets the number of inputs, their order and their labels
         # types are explicitly cast for safety i.e. ValueError on int fields that are not int (e.g. decimal values)
         # width sets the number of fields to expect; an assertion error happens if a row has too few or too many
+        # inputs and associated types can be placed in a versioned config file if the input structure is dynamic over time 
         self.input = ['time','symbol','size','price']
         self.types = [int, str, int, int]
         self.width = len(self.input)
