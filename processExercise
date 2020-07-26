@@ -1,0 +1,25 @@
+#!/gaulsh/apps/anaconda3/bin/python
+
+import argparse
+import os
+import sys
+from exercise import Processor
+
+parser = argparse.ArgumentParser(description='Run Qunatlab exercise')
+parser.add_argument('fin', type=str, help='input filepath')
+parser.add_argument('fout', type=str, help='output filepath')
+args = parser.parse_args()
+
+if __name__ == "__main__":
+
+    if os.path.isfile(args.fin) is False:
+        print('input file missing')
+        sys.exit(1)
+    elif args.fout is None:
+        print('please provide output path')
+        sys.exit(1)
+    else:
+        p = Processor(args.fin, args.fout)
+        p.run()
+
+sys.exit(0)

@@ -1,0 +1,8 @@
+#!/gaulsh/apps/anaconda3/bin/python
+
+from tests import *
+
+if __name__ == "__main__":
+
+     unittest.main()
+
