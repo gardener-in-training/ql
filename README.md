@@ -7,3 +7,5 @@ The code may or may not work with Python 2 or on Windows
 Some additional time, not much, was spent on setting up unit tests and creating the executables.
 
 By Sune Gaulsh
+
+Git: https://github.com/gardener-in-training/ql.git
